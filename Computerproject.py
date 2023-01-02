@@ -55,8 +55,13 @@ class StudentExaminationPortal:
 
     return marks
 
-# create a student
-s = Student("John", 1, [{"examination": "exam1", "marks": 90}, {"examination": "exam2", "marks": 80}])
+# create 6 student
+S1 = Student("John Stan", 1, [{"examination": "exam1", "marks": 90}, {"examination": "exam2", "marks": 80}])
+S2 = Student("Alex Standall", 2, [{"examination": "exam1","marks": 85}, {"examination": "exam2", "marks":89}])
+S3 = Student("Hannah Baker", 3, [{"examination": "exam1","marks": 83}, {"examination": "exam2", "marks":93}])
+S4 = Student("Clay Jensen", 4, [{"examination": "exam1","marks": 89}, {"examination": "exam2", "marks":78}])
+S5 = Student("Hermione Granger", 5, [{"examination": "exam1","marks": 93}, {"examination": "exam2", "marks":88}])
+S6 = Student("Harry Porter", 6, [{"examination": "exam1","marks": 87}, {"examination": "exam2", "marks":97}])
 
 # create an examination
 e1 = Examination("exam1", 100)
@@ -66,7 +71,7 @@ e2 = Examination("exam2", 100)
 sep = StudentExaminationPortal()
 
 # add the student and examination to the portal
-sep.add_student(s)
+sep.add_student(S1,S2,S3,S4,S5,S6)
 sep.add_examination(e1)
 sep.add_examination(e2)
 
